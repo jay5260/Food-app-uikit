@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeRestorantClvCell" customModule="SmartFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="211"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMx-C2-B75">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="211"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jks-sc-YU6">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="211"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jks-sc-YU6" secondAttribute="trailing" id="CNQ-1b-T7J"/>
+                            <constraint firstAttribute="bottom" secondItem="Jks-sc-YU6" secondAttribute="bottom" id="WVp-4j-YcT"/>
+                            <constraint firstItem="Jks-sc-YU6" firstAttribute="leading" secondItem="gMx-C2-B75" secondAttribute="leading" id="uB0-2j-A8O"/>
+                            <constraint firstItem="Jks-sc-YU6" firstAttribute="top" secondItem="gMx-C2-B75" secondAttribute="top" id="yzn-hZ-HNu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="gMx-C2-B75" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RxD-Os-FCU"/>
+                <constraint firstAttribute="bottom" secondItem="gMx-C2-B75" secondAttribute="bottom" id="Yv3-cy-Fc9"/>
+                <constraint firstItem="gMx-C2-B75" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZZ6-fb-0c2"/>
+                <constraint firstAttribute="trailing" secondItem="gMx-C2-B75" secondAttribute="trailing" id="uns-H7-78Z"/>
+            </constraints>
+            <size key="customSize" width="175" height="211"/>
+            <connections>
+                <outlet property="restorantImg" destination="Jks-sc-YU6" id="qtO-Rv-bHP"/>
+            </connections>
+            <point key="canvasLocation" x="225.19083969465649" y="45.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
